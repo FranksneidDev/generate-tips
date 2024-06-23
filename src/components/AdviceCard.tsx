@@ -59,7 +59,10 @@ export default function AdviceCard() {
                 <Image src="/images/pattern-divider-mobile.svg" alt="pattern-divider" width={350} height={16} className="w-full" />
             </div>
             <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 translate-y-1/2">
-                <button onClick={handleAdvice} className="bg-primary-neon-green p-4 rounded-full">
+                <button
+                    onClick={handleAdvice}
+                    className="bg-primary-neon-green p-4 rounded-full hover:bg-primary-neon-green hover:shadow-[0_0_15px_5px_rgba(127,255,0,0.7)] active:shadow-[0_0_25px_10px_rgba(127,255,0,1)] transition-shadow duration-300 ease-in-out"
+                >
                     <Image src="/images/icon-dice.svg" alt="icon-dice" width={24} height={24} />
                 </button>
             </div>
