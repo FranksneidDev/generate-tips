@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import {inspect} from "util";
 
 const config: Config = {
   content: [
@@ -13,6 +14,17 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        primary: {
+          'light-cyan': 'hsl(193, 38%, 86%)', //Color textos
+          'neon-green': 'hsl(150, 100%, 66%)', //Color del boton y numero de consejo
+        },
+        neutral: {
+          'grayish-blue': 'hsl(217, 19%, 38%)', //Color Tarjeta
+          'dark-grayish-blue': 'hsl(217, 19%, 24%)',//Color lineas tarjeta
+          'dark-blue': 'hsl(218, 23%, 16%)', //Background-fondo
+        },
+      }
     },
   },
   plugins: [],
