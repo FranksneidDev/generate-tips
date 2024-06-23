@@ -31,7 +31,7 @@ export default function AdviceCard() {
 
 
     return(
-        <div className=" lg:w-auto w-80 bg-neutral-dark-grayish-blue p-6 lg:p-10 rounded-xl text-center text-primary-light-cyan relative">
+        <div className=" lg:w-70 w-80 bg-neutral-dark-grayish-blue p-6 lg:p-10 rounded-xl text-center text-primary-light-cyan relative">
             {advice &&
                 <span className="text-primary-neon-green uppercase tracking-widest mb-4 text-md md:text-sm font-medium block">
                     Advice #{advice.id}
@@ -40,19 +40,19 @@ export default function AdviceCard() {
 
             <div className=" lg:max-w-xl mb-4 mt-4">
                 {!advice &&
-                    <blockquote className="text-2xl lg:text-3xl font-semibold">
+                    <blockquote className="text-2xl  font-semibold">
                         Click the button to receive your first advice
                     </blockquote>
                 }
                 {advice &&
-                    <blockquote className="text-2xl lg:text-3xl font-semibold">
+                    <blockquote className="text-2xl  font-semibold">
                         {advice.advice}
                     </blockquote>
                 }
 
 
             </div>
-            <div className=" hidden lg:flex justify-center items-center mt-8 mb-8">
+            <div className=" hidden lg:flex justify-center items-center mt-5 mb-4">
                 <Image src="/images/pattern-divider-desktop.svg" alt="pattern-divider" width={350} height={16} className="w-full" />
             </div>
             <div className=" lg:hidden flex justify-center items-center mt-8 mb-8">
