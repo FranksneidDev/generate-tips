@@ -41,7 +41,7 @@ export default function AdviceCard() {
             <div className=" lg:max-w-xl mb-4 mt-4">
                 {!advice &&
                     <blockquote className="text-2xl lg:text-3xl font-semibold">
-                        Click al boton para recibir tu primer consejo
+                        Click the button to receive your first advice
                     </blockquote>
                 }
                 {advice &&
